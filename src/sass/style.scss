@@ -1,5 +1,69 @@
-$bgColor:blue;
-
-h1{
-  color:$bgColor;
+html {
+    box-sizing: border-box;
+    display: flex;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.main-navbar {
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    padding-right: 1rem;
+}
+
+.main-navbar--logo {
+    margin-right: auto;
+}
+
+.main-navbar--links {
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.contact-link {
+    margin-right: 3rem;
+}
+
+.banner-image {
+    height: 60vh;
+    margin-bottom: 3rem;
+    object-fit: cover;
+    width: 100vw;
+}
+
+.work-navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.work-navbar--links {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.footer-text {
+    color: white;
+    margin-top: 3rem;
+}
+
+// Credits - Photo by Norbert Levajsics on Unsplash, Photo by Stéphan Valentin on Unsplash, Photo by Stéphan Valentin on Unsplash

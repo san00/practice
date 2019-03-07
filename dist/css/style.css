@@ -1,2 +1,69 @@
-body {
-  background: blue; }
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.main-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding-right: 1rem; }
+
+.main-navbar--logo {
+  margin-right: auto; }
+
+.main-navbar--links {
+  margin-left: 2rem;
+  text-decoration: none; }
+
+.contact-link {
+  margin-right: 3rem; }
+
+.banner-image {
+  height: 60vh;
+  margin-bottom: 3rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100vw; }
+
+.work-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+.work-navbar--links {
+  text-decoration: none; }
+
+.footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 10rem; }
+
+.footer-text {
+  color: white;
+  margin-top: 3rem; }
