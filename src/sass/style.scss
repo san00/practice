@@ -68,6 +68,15 @@ html {
 
 .work-navbar--links {
     text-decoration: none;
+    color: grey;
+}
+.work-navbar--links:hover{
+    background-color: black;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    color:white;
+    padding-top: 0.5rem;
 }
 .work-photos {
     column-gap: 2rem;

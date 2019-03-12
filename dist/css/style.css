@@ -68,7 +68,16 @@ html {
   margin-right: 5rem; }
 
 .work-navbar--links {
-  text-decoration: none; }
+  text-decoration: none;
+  color: grey; }
+
+.work-navbar--links:hover {
+  background-color: black;
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  color: white;
+  padding-top: 0.5rem; }
 
 .work-photos {
   -webkit-column-gap: 2rem;
