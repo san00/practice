@@ -52,13 +52,26 @@ html {
 .work-navbar--links {
     text-decoration: none;
 }
+.work-photos {
+    column-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8rem;
+    row-gap: 2rem;
+}
+.photo-collection {
+    height: 35vh ;
+    width: 35vw ;
+    object-fit: cover;
+}
 
 .footer {
     background-color: black;
     display: flex;
     height: 20vh;
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
 }
 
 .footer-text {
