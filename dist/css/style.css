@@ -16,48 +16,53 @@ html {
   box-sizing: inherit; }
 
 .main-navbar {
+  background-color: aquamarine;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3rem;
-  margin-top: 2rem;
-  padding-right: 1rem; }
+  margin-top: 2rem; }
 
 .main-navbar--logo {
   margin-right: auto; }
 
 .main-navbar--links {
-  margin-left: 2rem;
+  margin-left: 1rem;
   text-decoration: none; }
 
 .contact-link {
-  margin-right: 3rem; }
+  margin-right: 1rem; }
+
+.banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .banner-image {
-  height: 60vh;
-  margin-bottom: 3rem;
+  height: 40vh;
+  margin-bottom: 2rem;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100vw; }
 
 .banner-text {
-  position: absolute;
-  bottom: 25rem;
-  left: 20rem;
   background-color: white;
-  width: 25rem;
-  height: 10rem;
-  border: 0.5rem solid lightgray; }
+  border: 0.5rem solid lightgray;
+  height: 20vh;
+  left: 10%;
+  position: absolute;
+  top: 25%;
+  width: 80vw; }
 
-.text {
+.banner-text-all {
+  font-size: 1.2rem;
   text-align: center; }
 
-.banner-text-main {
-  font-size: 1.5rem;
-  padding-top: 3rem;
-  font-weight: bold; }
+.banner-text-header {
+  font-weight: bold;
+  padding-top: 1rem; }
 
-.work-navbar {
+.portfolio-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,19 +72,19 @@ html {
   margin-left: 5rem;
   margin-right: 5rem; }
 
-.work-navbar--links {
-  text-decoration: none;
-  color: grey; }
+.portfolio-navbar--links {
+  color: grey;
+  text-decoration: none; }
 
-.work-navbar--links:hover {
+.portfolio-navbar--links:hover {
   background-color: black;
-  width: 5rem;
-  height: 2rem;
-  text-align: center;
   color: white;
-  padding-top: 0.5rem; }
+  height: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  width: 5rem; }
 
-.work-photos {
+.portfolio-photos {
   -webkit-column-gap: 2rem;
   column-gap: 2rem;
   display: -webkit-box;
@@ -95,9 +100,9 @@ html {
 
 .photo-collection {
   height: 35vh;
-  width: 35vw;
   -o-object-fit: cover;
-  object-fit: cover; }
+  object-fit: cover;
+  width: 35vw; }
 
 .footer {
   background-color: black;
