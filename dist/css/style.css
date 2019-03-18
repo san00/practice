@@ -16,36 +16,36 @@ html {
   box-sizing: inherit; }
 
 .main-navbar {
-  background-color: aquamarine;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3rem;
-  margin-top: 2rem; }
+  margin-bottom: calc(1rem * 2);
+  margin-top: 1rem; }
 
-.main-navbar--logo {
-  margin-right: auto; }
+.main-navbar__logo {
+  margin-right: auto;
+  padding-left: 1rem; }
 
-.main-navbar--links {
+.main-navbar__links {
   margin-left: 1rem;
   text-decoration: none; }
 
-.contact-link {
+.main-navbar__links-contact {
   margin-right: 1rem; }
 
-.banner-container {
+.banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.banner-image {
+.banner__image {
   height: 40vh;
-  margin-bottom: 2rem;
+  margin-bottom: calc(1rem * 2);
   -o-object-fit: cover;
   object-fit: cover;
   width: 100vw; }
 
-.banner-text {
+.banner__text {
   background-color: white;
   border: 0.5rem solid lightgray;
   height: 20vh;
@@ -54,37 +54,37 @@ html {
   top: 25%;
   width: 80vw; }
 
-.banner-text-all {
+.banner__text-all {
   font-size: 1.2rem;
   text-align: center; }
 
-.banner-text-header {
+.banner__text-header {
   font-weight: bold;
   padding-top: 1rem; }
 
-.portfolio-navbar {
+.portfolio__navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-bottom: 3rem;
-  margin-left: 5rem;
-  margin-right: 5rem; }
+  margin-bottom: calc(1rem * 2);
+  margin-left: calc(1rem * 4);
+  margin-right: calc(1rem * 4); }
 
-.portfolio-navbar--links {
+.portfolio__navbar-links {
   color: grey;
   text-decoration: none; }
 
-.portfolio-navbar--links:hover {
+.portfolio__navbar-links:hover {
   background-color: black;
   color: white;
   height: 2rem;
-  padding-top: 0.5rem;
+  padding-top: calc(1rem / 2);
   text-align: center;
   width: 5rem; }
 
-.portfolio-photos {
+.portfolio__images {
   -webkit-column-gap: 2rem;
   column-gap: 2rem;
   display: -webkit-box;
@@ -95,10 +95,10 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 8rem;
-  row-gap: 2rem; }
+  margin-bottom: calc(1rem * 4);
+  row-gap: 1rem; }
 
-.photo-collection {
+.portfolio__images-gallery {
   height: 35vh;
   -o-object-fit: cover;
   object-fit: cover;
@@ -112,9 +112,8 @@ html {
   height: 20vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 2rem; }
+  justify-content: center; }
 
-.footer-text {
+.footer__text {
   color: white;
-  margin-top: 3rem; }
+  margin-top: calc(1rem * 4); }

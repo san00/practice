@@ -1,3 +1,14 @@
+
+// spacing scale for margins & padding
+$base-space: 1rem;
+$spacing-xxs: calc(#{$base-space} / 8); // 2px spacing
+$spacing-xs: calc(#{$base-space} / 4);// 4px spacing
+$spacing-s: calc(#{$base-space} / 2);// 8px spacing
+$spacing-m: $base-space; // 16px spacing
+$spacing-l: calc(#{$base-space} * 2); // 32px spacing
+$spacing-xl: calc(#{$base-space} * 4); // 64px spacing
+$spacing-xxl: calc(#{$base-space} * 8); // 128px spacing
+
 html {
     box-sizing: border-box;
     display: flex;
@@ -15,37 +26,37 @@ html {
 }
 
 .main-navbar {
-    background-color: aquamarine;
     display: flex;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
+    margin-bottom: $spacing-l;
+    margin-top: $spacing-m;
 }
 
-.main-navbar--logo {
+.main-navbar__logo {
     margin-right: auto;
+    padding-left: $spacing-m;
 }
 
-.main-navbar--links {
-    margin-left: 1rem;
+.main-navbar__links {
+    margin-left: $spacing-m;
     text-decoration: none;
 }
 
-.contact-link {
-    margin-right: 1rem;
+.main-navbar__links-contact {
+    margin-right: $spacing-m;
 }
 
-.banner-container {
+.banner {
     display: flex;
 }
 
-.banner-image {
+.banner__image {
     height: 40vh;
-    margin-bottom: 2rem;
+    margin-bottom: $spacing-l;
     object-fit: cover;
     width: 100vw;
 }
 
-.banner-text {
+.banner__text {
     background-color: white;
     border: 0.5rem solid lightgray;
     height: 20vh;
@@ -55,52 +66,51 @@ html {
     width: 80vw;
 }
 
-.banner-text-all {
+.banner__text-all {
     font-size: 1.2rem;
     text-align: center;
 }
 
-.banner-text-header {
+.banner__text-header {
     font-weight: bold;
-    padding-top: 1rem;
+    padding-top: $spacing-m;
 }
 
-
-.portfolio-navbar {
+.portfolio__navbar {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-bottom: $spacing-l;
+    margin-left: $spacing-xl;
+    margin-right: $spacing-xl;
 }
 
-.portfolio-navbar--links {
+.portfolio__navbar-links{
     color: grey;
     text-decoration: none;
 }
 
-.portfolio-navbar--links:hover {
+.portfolio__navbar-links:hover {
     background-color: black;
     color: white;
     height: 2rem;
-    padding-top: 0.5rem;
+    padding-top: $spacing-s;
     text-align: center;
     width: 5rem;
 }
 
-.portfolio-photos {
+.portfolio__images {
     column-gap: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 8rem;
-    row-gap: 2rem;
+    margin-bottom: $spacing-xl;
+    row-gap: $spacing-m;
 }
 
-.photo-collection {
-    height: 35vh ;
+.portfolio__images-gallery {
+    height: 35vh;
     object-fit: cover;
-    width: 35vw ;
+    width: 35vw;
 }
 
 .footer {
@@ -108,12 +118,11 @@ html {
     display: flex;
     height: 20vh;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
-.footer-text {
+.footer__text {
     color: white;
-    margin-top: 3rem;
+    margin-top: $spacing-xl;
 }
 
 // Credits - Photo by Norbert Levajsics on Unsplash, Photo by Stéphan Valentin on Unsplash, Photo by Stéphan Valentin on Unsplash
