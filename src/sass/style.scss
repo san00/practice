@@ -1,4 +1,3 @@
-
 // spacing scale for margins & padding
 $base-space: 1rem;
 $spacing-xxs: calc(#{$base-space} / 8); // 2px spacing
@@ -8,6 +7,12 @@ $spacing-m: $base-space; // 16px spacing
 $spacing-l: calc(#{$base-space} * 2); // 32px spacing
 $spacing-xl: calc(#{$base-space} * 4); // 64px spacing
 $spacing-xxl: calc(#{$base-space} * 8); // 128px spacing
+
+//colour variables
+$white: white;
+$black: black;
+$lightgrey: lightgrey;
+$grey: grey;
 
 html {
     box-sizing: border-box;
@@ -33,7 +38,6 @@ html {
 
 .main-navbar__logo {
     margin-right: auto;
-    padding-left: $spacing-m;
 }
 
 .main-navbar__links {
@@ -57,8 +61,8 @@ html {
 }
 
 .banner__text {
-    background-color: white;
-    border: 0.5rem solid lightgray;
+    background-color: $white;
+    border: $spacing-s solid $lightgrey;
     height: 20vh;
     left: 10%;
     position: absolute;
@@ -72,7 +76,8 @@ html {
 }
 
 .banner__text-header {
-    font-weight: bold;
+    font-weight: 700;
+    margin-bottom: $spacing-m;
     padding-top: $spacing-m;
 }
 
@@ -84,22 +89,22 @@ html {
     margin-right: $spacing-xl;
 }
 
-.portfolio__navbar-links{
-    color: grey;
+.portfolio__navbar-links {
+    color: $grey;
     text-decoration: none;
 }
 
 .portfolio__navbar-links:hover {
-    background-color: black;
-    color: white;
-    height: 2rem;
+    background-color: $black;
+    color: $white;
+    height: $spacing-l;
     padding-top: $spacing-s;
     text-align: center;
-    width: 5rem;
+    width: $spacing-xl;
 }
 
 .portfolio__images {
-    column-gap: 2rem;
+    column-gap: $spacing-l;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,7 +126,7 @@ html {
 }
 
 .footer__text {
-    color: white;
+    color: $white;
     margin-top: $spacing-xl;
 }
 
