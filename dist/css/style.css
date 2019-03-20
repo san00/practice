@@ -85,24 +85,25 @@ html {
   width: calc(1rem * 4); }
 
 .portfolio__images {
-  -webkit-column-gap: calc(1rem * 2);
-  column-gap: calc(1rem * 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  margin-bottom: calc(1rem * 4);
+  margin-left: calc(1rem * 8);
+  margin-right: calc(1rem * 8);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: calc(1rem * 4);
-  row-gap: 1rem; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
 
 .portfolio__images-gallery {
-  height: 35vh;
   -o-object-fit: cover;
   object-fit: cover;
-  width: 35vw; }
+  margin: 1rem;
+  width: 25%; }
 
 .footer {
   background-color: black;

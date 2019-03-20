@@ -104,18 +104,18 @@ html {
 }
 
 .portfolio__images {
-    column-gap: $spacing-l;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: $spacing-xl;
-    row-gap: $spacing-m;
+    margin-left: $spacing-xxl;
+    margin-right: $spacing-xxl;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .portfolio__images-gallery {
-    height: 35vh;
     object-fit: cover;
-    width: 35vw;
+    margin: $spacing-m;
+    width: 25%;
 }
 
 .footer {
