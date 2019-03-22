@@ -105,17 +105,71 @@ html {
 
 .portfolio__images {
     display: flex;
+    justify-content: space-around;
     margin-bottom: $spacing-xl;
     margin-left: $spacing-xxl;
     margin-right: $spacing-xxl;
-    justify-content: center;
+
     flex-flow: row wrap;
 }
 
 .portfolio__images-gallery {
+    height: 17.6875rem;
+    margin-bottom: $spacing-m;
+    max-width: 19.5625rem;
     object-fit: cover;
-    margin: $spacing-m;
-    width: 25%;
+}
+
+//container needed to position overlay
+.portfolio__overlay {
+    position: relative;
+}
+
+// The overlay effect - lays on top of the container and over image
+.portfolio__overlay--effect {
+    background: $black;
+    bottom: 0;
+    color: $white;
+    height: 94%;
+    left: 0;
+    opacity: 0;
+    padding: $spacing-m;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: 0.5s ease;
+    width: 100%;
+}
+
+//fade in overlay on hover
+.portfolio__overlay:hover .portfolio__overlay--effect{
+    opacity: 0.5;
+}
+
+.icon {
+    color: white;
+    font-size: 1.5em;
+    height: $spacing-xl;
+    left: 50%;
+    position: absolute;
+    text-align: bottom;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: $spacing-xl;
+    transition: 1s ease;
+    border-radius: 50%;
+}
+.icon__link {
+    height: $spacing-xl;
+    left: $spacing-m;
+    position: relative;
+    top: $spacing-m;
+    width: $spacing-xl;
+}
+
+.icon:hover {
+    background: white;
 }
 
 .footer {
