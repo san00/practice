@@ -9,32 +9,58 @@
   </head>
 
   <body>
-    <header>
       <nav class="main-navbar">
-        <a href="" class="main-navbar--logo main-navbar--links">Demo site</a>
-        <a href="#home" class="main-navbar--links" id="home">home</a>
-        <a href="" class="main-navbar--links">about</a>
-        <a href="" class="main-navbar--links contact-link">contact</a>
+        <a href="" class="main-navbar__logo main-navbar__links">LOGO</a>
+        <a href="#home" class="main-navbar__links" id="home">home</a>
+        <a href="" class="main-navbar__links">about</a>
+        <a href="" class="main-navbar__links main-navbar__links-contact">contact</a>
       </nav>
+    <section class="banner">
       <img
-        class="banner-image"
+        class="banner__image"
         src="images/norbert-levajsics-343107-unsplash.jpg"
-        alt=""
-      />
-    </header>
-    <section class="work">
-      <header>
-        <nav class="work-navbar">
-          <a href="" class="work-navbar--links">All</a>
-          <a href="" class="work-navbar--links">lifestyle</a>
-          <a href="" class="work-navbar--links">photo</a>
-          <a href="" class="work-navbar--links">branding</a>
-        </nav>
-      </header>
+        alt="King kong figurine on desk beside computer"/>
+      <div class="banner__text">
+        <p class="banner__text-all banner__text-header">Lorem ipsum</p>
+        <p class="banner__text-all">This is a demo site</p>
+      </div>
     </section>
-
+    <section class="portfolio">
+        <nav class="portfolio__navbar">
+          <a href="" class="portfolio__navbar-links">All</a>
+          <a href="" class="portfolio__navbar-links">lifestyle</a>
+          <a href="" class="portfolio__navbar-links">photo</a>
+          <a href="" class="portfolio__navbar-links">branding</a>
+        </nav>
+      <div class="portfolio__images">
+        <img 
+          class="portfolio__images-gallery"
+          src="images/stephan-valentin-1415671-unsplash.jpg"
+          alt="times square, New York"/>
+        <img
+          class="portfolio__images-gallery"
+          src="images/sole-bicycles-1418884-unsplash.jpg"
+          alt="Bicycle"/>
+        <img
+          class="portfolio__images-gallery"
+          src="images/sole-bicycles-1418884-unsplash.jpg"
+          alt="Bicycle"/>
+        <img
+          class="portfolio__images-gallery"
+          src="images/stephan-valentin-1415671-unsplash.jpg"
+          alt="times square, New York"/>
+        <img
+          class="portfolio__images-gallery"
+          src="images/stephan-valentin-1415671-unsplash.jpg"
+          alt="times square, New York"/>
+        <img
+          class="portfolio__images-gallery"
+          src="images/sole-bicycles-1418884-unsplash.jpg"
+          alt="Bicycle"/>
+      </div>
+    </section>
     <footer class="footer">
-      <p class="footer-text">Made & designed by me</p>
+      <p class="footer__text">Made & designed by me</p>
     </footer>
   </body>
   <script src="js/main.js"></script>

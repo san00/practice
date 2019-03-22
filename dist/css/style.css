@@ -19,39 +19,90 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-  padding-right: 1rem; }
+  margin-bottom: calc(1rem * 2);
+  margin-top: 1rem; }
 
-.main-navbar--logo {
+.main-navbar__logo {
   margin-right: auto; }
 
-.main-navbar--links {
-  margin-left: 2rem;
+.main-navbar__links {
+  margin-left: 1rem;
   text-decoration: none; }
 
-.contact-link {
-  margin-right: 3rem; }
+.main-navbar__links-contact {
+  margin-right: 1rem; }
 
-.banner-image {
-  height: 60vh;
-  margin-bottom: 3rem;
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.banner__image {
+  height: 40vh;
+  margin-bottom: calc(1rem * 2);
   -o-object-fit: cover;
   object-fit: cover;
   width: 100vw; }
 
-.work-navbar {
+.banner__text {
+  background-color: white;
+  border: calc(1rem / 2) solid lightgrey;
+  height: 20vh;
+  left: 10%;
+  position: absolute;
+  top: 25%;
+  width: 80vw; }
+
+.banner__text-all {
+  font-size: 1.2rem;
+  text-align: center; }
+
+.banner__text-header {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-top: 1rem; }
+
+.portfolio__navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-bottom: 3rem;
-  margin-left: 5rem;
-  margin-right: 5rem; }
+  margin-bottom: calc(1rem * 2);
+  margin-left: calc(1rem * 4);
+  margin-right: calc(1rem * 4); }
 
-.work-navbar--links {
+.portfolio__navbar-links {
+  color: grey;
   text-decoration: none; }
+
+.portfolio__navbar-links:hover {
+  background-color: black;
+  color: white;
+  height: calc(1rem * 2);
+  padding-top: calc(1rem / 2);
+  text-align: center;
+  width: calc(1rem * 4); }
+
+.portfolio__images {
+  -webkit-column-gap: calc(1rem * 2);
+  column-gap: calc(1rem * 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: calc(1rem * 4);
+  row-gap: 1rem; }
+
+.portfolio__images-gallery {
+  height: 35vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 35vw; }
 
 .footer {
   background-color: black;
@@ -61,9 +112,8 @@ html {
   height: 20vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 10rem; }
+  justify-content: center; }
 
-.footer-text {
+.footer__text {
   color: white;
-  margin-top: 3rem; }
+  margin-top: calc(1rem * 4); }

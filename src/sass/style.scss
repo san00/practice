@@ -1,3 +1,19 @@
+// spacing scale for margins & padding
+$base-space: 1rem;
+$spacing-xxs: calc(#{$base-space} / 8); // 2px spacing
+$spacing-xs: calc(#{$base-space} / 4);// 4px spacing
+$spacing-s: calc(#{$base-space} / 2);// 8px spacing
+$spacing-m: $base-space; // 16px spacing
+$spacing-l: calc(#{$base-space} * 2); // 32px spacing
+$spacing-xl: calc(#{$base-space} * 4); // 64px spacing
+$spacing-xxl: calc(#{$base-space} * 8); // 128px spacing
+
+//colour variables
+$white: white;
+$black: black;
+$lightgrey: lightgrey;
+$grey: grey;
+
 html {
     box-sizing: border-box;
     display: flex;
@@ -16,41 +32,90 @@ html {
 
 .main-navbar {
     display: flex;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    padding-right: 1rem;
+    margin-bottom: $spacing-l;
+    margin-top: $spacing-m;
 }
 
-.main-navbar--logo {
+.main-navbar__logo {
     margin-right: auto;
 }
 
-.main-navbar--links {
-    margin-left: 2rem;
+.main-navbar__links {
+    margin-left: $spacing-m;
     text-decoration: none;
 }
 
-.contact-link {
-    margin-right: 3rem;
+.main-navbar__links-contact {
+    margin-right: $spacing-m;
 }
 
-.banner-image {
-    height: 60vh;
-    margin-bottom: 3rem;
+.banner {
+    display: flex;
+}
+
+.banner__image {
+    height: 40vh;
+    margin-bottom: $spacing-l;
     object-fit: cover;
     width: 100vw;
 }
 
-.work-navbar {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+.banner__text {
+    background-color: $white;
+    border: $spacing-s solid $lightgrey;
+    height: 20vh;
+    left: 10%;
+    position: absolute;
+    top: 25%;
+    width: 80vw;
 }
 
-.work-navbar--links {
+.banner__text-all {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.banner__text-header {
+    font-weight: 700;
+    margin-bottom: $spacing-m;
+    padding-top: $spacing-m;
+}
+
+.portfolio__navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: $spacing-l;
+    margin-left: $spacing-xl;
+    margin-right: $spacing-xl;
+}
+
+.portfolio__navbar-links {
+    color: $grey;
     text-decoration: none;
+}
+
+.portfolio__navbar-links:hover {
+    background-color: $black;
+    color: $white;
+    height: $spacing-l;
+    padding-top: $spacing-s;
+    text-align: center;
+    width: $spacing-xl;
+}
+
+.portfolio__images {
+    column-gap: $spacing-l;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: $spacing-xl;
+    row-gap: $spacing-m;
+}
+
+.portfolio__images-gallery {
+    height: 35vh;
+    object-fit: cover;
+    width: 35vw;
 }
 
 .footer {
@@ -58,12 +123,11 @@ html {
     display: flex;
     height: 20vh;
     justify-content: center;
-    margin-bottom: 10rem;
 }
 
-.footer-text {
-    color: white;
-    margin-top: 3rem;
+.footer__text {
+    color: $white;
+    margin-top: $spacing-xl;
 }
 
 // Credits - Photo by Norbert Levajsics on Unsplash, Photo by Stéphan Valentin on Unsplash, Photo by Stéphan Valentin on Unsplash
