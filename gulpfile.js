@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 
 //  -- Functions --
@@ -14,7 +14,7 @@ const imagemin = require("gulp-imagemin");
 // Copy all html files
 gulp.task(
   "html",
-  gulp.series((done) => {
+  gulp.series(done => {
     gulp.src("src/*.html").pipe(gulp.dest("dist"));
     done();
   })
@@ -23,7 +23,7 @@ gulp.task(
 // //Copy & minify javascript files
 gulp.task(
   "javascript",
-  gulp.series((done) => {
+  gulp.series(done => {
     gulp
       .src("src/js/*.js")
       .pipe(uglify())
@@ -35,7 +35,7 @@ gulp.task(
 //  Optimise images
 gulp.task(
   "imagemin",
-  gulp.series((done) => {
+  gulp.series(done => {
     gulp
       .src("src/images/*")
       .pipe(imagemin())
@@ -47,7 +47,7 @@ gulp.task(
 // Compile sass & autoprefix
 gulp.task(
   "sass",
-  gulp.series((done) => {
+  gulp.series(done => {
     gulp
       .src("src/sass/*.scss")
       .pipe(sass().on("error", sass.logError))
@@ -61,7 +61,7 @@ gulp.task(
 // -- Watch & serve tasks --
 gulp.task(
   "default",
-  gulp.parallel("html", "sass", "javascript", "imagemin", (done) => {
+  gulp.parallel("html", "sass", "javascript", "imagemin", done => {
     browserSync.init({ server: "./dist" }); //* root changed
     gulp.watch(["src/js/*.js", "javascript"]).on("change", browserSync.reload);
     gulp.watch("src/sass/*.scss", gulp.series("sass"));
@@ -72,4 +72,4 @@ gulp.task(
   })
 );
 
-//Note - see * for changes to fix issue with browsersync not updating. 
+//Note - see * for changes to fix issue with browsersync not updating.
